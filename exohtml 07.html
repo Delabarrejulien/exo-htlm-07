@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formu.css">
+    <title>exo07</title>
+</head>
+
+<body>
+
+    <h1>Formulaire de commande</h1>
+
+    <form method="POST" action="traitement.php">
+
+        <div id="zone1"><strong>Votre identité </strong>><br><br>
+
+            <label for="Name"><strong>3.Nom:</strong></label>
+            <input type="text" name="Name" id="Name"><br><br>
+
+            <label for="FirstName"><strong>2.Prénom:</strong></label>
+            <input type="text" name="FirstName" id="First"><br><br>
+
+            <label for="Mail"><strong>3.Adresse Mail:</strong></label>
+            <input type="text" name="Mail" id="Mail"><br><br>
+
+        </div>
+
+        <div id="zone2"><strong>Adresse de livraison</strong>><br><br>
+
+            <label for="Adress"><strong>3.Adresse:</strong></label>
+            <textarea name="Adress" id="Adress"></textarea><br><br>
+
+            <label for="Postal"><strong>2.Code Postal:</strong></label>
+            <input type="text" name="Postal" id="Postal"><br><br>
+
+            <label for="City"><strong>3.Ville:</strong></label>
+            <input type="text" name="City" id="City"><br><br>
+
+        </div>
+
+        <div id="zone3"><strong>Informations de réglement</strong>><br>
+
+            <p><strong>1.Type de carte banquaire:</strong></p>
+
+            <input type="radio" value="Visa" name="Bcb" id="CbV">
+            <label for="Visa"><strong>Visa</strong></label><br>
+
+            <input type="radio" value="Master" name="Bcb" id="CbM">
+            <label for="Master"><strong>Mastercard</strong></label><br><br>
+
+            <label for="CardNumber"><strong>2:Numéro de carte:</strong></label>
+            <input type="text" name="CardNumber" id="CardNumber"><br><br>
+
+            <label for="key"><strong>3.code de sécurité:</strong></label>
+            <input type="text" name="key" id="key"><br><br>
+
+            <label for="cardName"><strong>4.Nom du titulaire:</strong></label>
+            <input type="text" name="cardName" id="cardName"><br><br>
+
+        </div>
+        <table>
+            <input type="submit" value="J'achéte">
+        </table>
+    </form>
+
+</body>
+
+</html>
